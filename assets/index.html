@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" data-framework="angular2">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular2 • TodoMVC</title>
+		<link rel="stylesheet" href="/lib/base.css">
+		<link rel="stylesheet" href="/lib/index.css">
+		<script src="/lib/angular2-polyfills.js"></script>
+		<script src="/lib/system.src.js"></script>
+		<script src="/lib/Rx.js"></script>
+    <script src="/lib/angular2.dev.js"></script>
+    <script src="/lib/http.dev.js"></script>
+	</head>
+	<body>
+		<todo-app></todo-app>
+		<footer class="info">
+			<p>Double-click to edit a todo</p>
+		</footer>
+		<script>
+			System.config({
+				packages: {
+					'app': {
+						format: 'cjs',
+						defaultExtension: 'js'
+					}
+				}
+			});
+			System.import('app/bootstrap');
+		</script>
+	</body>
+</html>
